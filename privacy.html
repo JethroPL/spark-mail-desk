@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; Spark Mail Desk</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+line-height:1.6;color:#1a1a1a;background:#fff;padding:2rem 1rem;max-width:48rem;margin:0 auto}
+@media(prefers-color-scheme:dark){body{color:#e0e0e0;background:#1a1a1a}}
+h1{font-size:1.5rem;margin:0 0 .5rem}
+h2{font-size:1.15rem;margin:1.5rem 0 .5rem}
+p,ul{margin:0 0 1rem}
+ul{padding-left:1.5rem}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+.footer{margin-top:2rem;font-size:.875rem}
+.footer a{margin-right:1rem}
+.footer span{font-size:.875rem;color:#666}
+@media(prefers-color-scheme:dark){.footer span{color:#999}}
+</style>
+</head>
+<body>
+<h1>Privacy Policy &mdash; Spark Mail Desk</h1>
+<p>Effective date: 10 October 2026</p>
+
+<h2>What this app does</h2>
+<p>Spark Mail Desk is a private tool for Jethro Laungayan's own assistant to manage his personal
+Gmail accounts (<code>jethro1287@gmail.com</code> and <code>jethro.laungayan@gmail.com</code>).
+It does not send, reply to, or forward email. Jethro sends everything himself from drafts.</p>
+
+<h2>Google scope and what the code does</h2>
+<p>The app uses the Google scope <code>gmail.modify</code>. The code performs only the following
+actions on behalf of the account owner:</p>
+<ul>
+<li>Search and read email messages and threads.</li>
+<li>Apply or remove labels (including the Gmail "Starred" and "Important" labels).</li>
+<li>Archive mail from the inbox.</li>
+<li>Move mail to Trash (or restore from Trash).</li>
+<li>Create, update, and delete draft messages.</li>
+</ul>
+<p>Sending, replying, forwarding, and permanent deletion (beyond Gmail's own 30-day Trash retention)
+are blocked by code.</p>
+
+<h2>Data used and stored</h2>
+<ul>
+<li>Email content is read only for the purpose of displaying it to the account owner through the assistant.
+  The code limits body text to 20&nbsp;000 characters per message and does not store bodies on disk.</li>
+<li>Sign-in tokens (Google OAuth refresh tokens) are stored as files on Jethro's own server only,
+  in the <code>secrets/</code> folder with file permissions set to 600. Only Jethro can read them.</li>
+<li>An activity log records the action name (e.g. <code>search</code>, <code>trash</code>), the account,
+  and a timestamp. It never stores email content.</li>
+</ul>
+
+<h2>No sharing</h2>
+<p>We do not send, sell, or share any information collected through Spark Mail Desk with any third party.</p>
+
+<h2>How to revoke access</h2>
+<p>Sign in to your Google Account, go to <strong>Security</strong> &gt;
+<strong>Third-party apps with account access</strong>, and remove "Spark Gmail".
+This revokes the refresh token and the app can no longer access your mailbox.</p>
+
+<h2>Google API Services User Data Policy</h2>
+<p>The app's use of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+including the Limited Use requirements.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests regarding this policy: <a href="mailto:jethro1287@gmail.com">jethro1287@gmail.com</a></p>
+
+<p class="footer"><a href="index.html">Spark Mail Desk</a> <span>&middot; Effective 10 October 2026</span></p>
+</body>
+</html>
